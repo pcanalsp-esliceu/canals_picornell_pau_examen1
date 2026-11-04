@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacte Bicis de tramuntana</title>
+</head>
+<body>
+    <header>
+        <h1>Bicis tramuntana</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inici</a></li>
+                <li><a href="contacte.html">Contacte</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2>Horari del taller</h2>
+        <table border="1">
+            <caption>Horari del taller</caption>
+            <tr>
+                <th>Dia</th>
+                <th>Mati</th>
+                <th>Horobaixa</th>
+            </tr>
+            <tr>
+                <td>Dilluns</td>
+                <td colspan="2">tancat</td>
+            </tr>
+            <tr>
+                <td>Dimarts</td>
+                <td rowspan="2">9 a 13</td>
+                <td>16 a 20</td>
+            </tr>
+            <tr>
+                <td>Dimecres</td>
+                <td>16 a 20</td>
+            </tr>
+        </table>
+        <h2>Escriu-nos</h2>
+        <form action="contacte.php" method="post">
+            <p>
+                <label for="nom">Nom</label>
+                <input type="text" id="nom" name="nom" required>
+            </p>
+            <p>
+                <label for="correu">Correu</label>
+                <input type="email" name="correu" id="correu" required>
+            </p>
+            <p>Tipus de bici</p>
+            <p>
+                <input type="radio" name="bici" id="carretera" value="carretera">
+                <label for="carretera">Carretera</label>
+                <input type="radio" name="bici" id="muntanya" value="muntanya">
+                <label for="muntanya">Muntanya</label>
+                <input type="radio" name="bici" id="urbana" value="urbana">
+                <label for="urbana">Urbana</label>
+            </p>
+            <p>
+                <label for="missatge">Missatge</label>
+                <textarea name="missatge" id="missatge"></textarea>
+            </p>
+            <button type="submit">Envia</button>
+        </form>
+    </main>
+</body>
+</html>
