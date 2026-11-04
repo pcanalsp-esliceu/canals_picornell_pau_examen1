@@ -40,4 +40,20 @@ article {
     padding: 20px ;
     border: 1px solid black ;
     margin-bottom: 20px;
+    position: relative;
+}
+
+article img {
+    width: 100%;
+}
+
+.nou {
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+    padding: 4 px 10px;
+    background-color: #2e7d32;
+    color: white;
+    text-transform: uppercase;
+    border-radius: 6px;
 }
