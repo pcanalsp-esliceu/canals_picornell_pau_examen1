@@ -1,0 +1,35 @@
+EXERCICI A1 · BLOCK O INLINE?
+Escriu el display per defecte. Després, pensa què passa si en poses dos seguits a l’HTML.
+
+ELEMENT          DISPLAY                SI EN POSES DOS SEGUITS...
+<h2>              Block                     Es distanciaran mes les paraules
+<a>               Inline                    Tapara mes la part baixa i alta
+<li>              Block                     Es distanciaran mes les paraules
+<strong>          Inline                    Tapara mes la part baixa i alta
+<article>         Block                     Es distanciaran mes les paraules
+<span>            Inline                    Tapara mes la part baixa i alta
+
+EXERCICI A2 · 💻 EL MENÚ, AMB CAIXES CLICABLES
+Ara el menú és una llista amb pics, i només pots clicar damunt de les lletres. Afegeix això al teu
+css/estils.css :
+nav ul {
+    list-style: none; /* fora els pics */
+    margin: 0;
+    padding: 0; /* fora el sagnat de la llista */
+}
+nav a {
+    display: block; /* l'enllaç passa a ser una caixa */
+    padding: 10px 16px;
+}
+
+Prova-ho: ara pots clicar a qualsevol lloc de la franja, no només damunt del text. Esborra el display:
+block i torna-ho a provar.
+Per què hem posat display: block a l’enllaç i no l’hem deixat com estava?
+
+Perque no es sobrelapin un amb l'altra
+
+EXERCICI A3 · 💻 NONE O HIDDEN, A L’INSPECTOR
+Obre l’inspector (F12), selecciona el primer article i, a la pestanya Styles, afegeix-li display:none . Després canvia-ho per visibility: hidden . Aquests canvis no es guarden: en recarregar la
+pàgina, tot torna a ser com abans. Què passa amb el segon article en cada cas?
+
+Amb el display:none; desapereix el article i es junta tot com si no existeix i amb visibility:hidden; desapereix el article pero el contingut que ocupa segeix estant

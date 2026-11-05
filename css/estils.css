@@ -3,6 +3,7 @@ html {
     font-size: 62.5%;
 }
 
+
 *, *::before, *::after {
     box-sizing: inherit;
 }
@@ -22,10 +23,6 @@ header{
     color: white;
 }
 
-h1 {
-    font-size: 3.2rem;
-}
-
 h2 {
     font-size: 2.4rem;
 }
@@ -36,7 +33,6 @@ nav a {
 }
 
 article {
-    width: 400px;
     padding: 20px ;
     border: 1px solid black ;
     margin-bottom: 20px;
@@ -56,4 +52,45 @@ article img {
     color: white;
     text-transform: uppercase;
     border-radius: 6px;
+}
+
+nav ul {
+    list-style: none; /* fora els pics */
+    margin: 0;
+    padding: 0; /* fora el sagnat de la llista */
+}
+
+nav a {
+    display: block; /* l'enllaç passa a ser una caixa */
+    padding: 10px 16px;
+}
+@media (min-width: 768px) {
+   h1 {
+        font-size: 3.2rem ;
+    }
+}
+
+main{
+    padding: 20px 16px 0;
+}
+
+.eslogan {
+    display: none;
+}
+
+@media (min-width: 768px) {
+    .eslogan{
+        display: block;
+    }
+
+    nav li {
+        display: inline-block;
+    }
+
+    article {
+        display: inline-block;
+        width: 48%;
+        margin-right: 1%;
+        vertical-align: top;
+    }
 }
