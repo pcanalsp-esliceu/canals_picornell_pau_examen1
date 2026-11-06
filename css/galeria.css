@@ -1,10 +1,16 @@
 
+body {
+    background-color: whitesmoke;
+}
 
 figure {
     background-color: white;
-    border: 0.5px solid  black;
-    margin-bottom: 16px;
+    border: 0.5px   black;
+    margin: 0 0 16px;
+}
 
+figcaption {
+    margin: 5px 10px;
 }
 
 .banner{
@@ -42,8 +48,15 @@ img {
     figure {
         display: inline-block;
         width: 48%;
-        margin-right: 1%;
         vertical-align: top;
     }
 
+}
+
+@media (min-width:992px) {
+    figure {
+        display: inline-block;
+        width: 33%;
+        vertical-align: top;
+    }
 }

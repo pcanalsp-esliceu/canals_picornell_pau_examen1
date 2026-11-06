@@ -33,3 +33,39 @@ Obre l’inspector (F12), selecciona el primer article i, a la pestanya Styles, 
 pàgina, tot torna a ser com abans. Què passa amb el segon article en cada cas?
 
 Amb el display:none; desapereix el article i es junta tot com si no existeix i amb visibility:hidden; desapereix el article pero el contingut que ocupa segeix estant
+
+
+
+
+
+5.1-galeria
+
+EXERCICI G1 · 💻 LA RATLLA BUIDA DE SOTA LA FOTO
+Mira una foto amb l’inspector: entre la foto i el peu hi ha una ratlla buida d’uns pocs píxels. Posa
+display: block a les img i desapareix. Per què hi era?
+
+Es el padding
+
+EXERCICI G2 · QUANTES FOTOS PER FILA?
+Amb el teu CSS, omple la taula sense provar-ho. Després, comprova-ho al mode dispositiu.
+AMPLADA             FOTOS PER FILA               ES VEUEN ELS KM?                ES VEU EL BÀNER?
+400 px                    1                             no                              no
+600 px                    2                             no                              no
+800 px                    2                             si                              si
+1000 px                   3                             si                              si
+1400 px                   3                             si                              si
+
+
+EXERCICI G3 · ELS NÚMEROS
+a) Per a tres per fila, per què no serveix width: 33.33% , i quin width poses?
+
+Perque no surten les tre files i es te que posar 33%
+
+b) La media query de 992 px només canvia el width . D’on treu la figure el display: inline-
+block ?
+
+Del css
+
+c) Algú proposa quatre fotos per fila a partir de 1200 px. Per què no queda bé amb nou fotos?
+
+Quedarien irregulars les files la ultima fila nomes tendria una foto
