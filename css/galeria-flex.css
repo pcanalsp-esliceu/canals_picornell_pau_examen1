@@ -1,0 +1,70 @@
+body {
+    background-color: whitesmoke;
+}
+
+figure {
+    background-color: white;
+    border: 0.5px   black;
+    margin: 0 ;
+    width: 100%;
+    padding: 1px;
+}
+
+figcaption {
+    display: flex;
+    justify-content: space-between;
+}
+
+.km {
+    color: #6b6459 ;
+}
+
+.banner{
+    display: none ;
+    margin: 0;
+}
+
+.km {
+    display: none;
+}
+
+img {
+    width: 100%;
+    padding-bottom: 5px;
+}
+
+div.galeria{
+    display: flex;
+}
+
+.galeria {
+    flex-wrap: wrap;
+    gap: 16px ;
+}
+
+@media (min-width: 576px) {
+    figure{
+        width: calc((100% - 16px) / 2);
+    }
+}
+
+@media (min-width: 768px) {
+    .km {
+        display: inline;
+    }
+
+    .banner {
+        display: block;
+    }
+
+    header{
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+@media (min-width: 992px) {
+    figure {
+        width: calc((100% - 32px) / 3);
+    }
+}
